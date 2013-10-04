@@ -1,0 +1,27 @@
+/*css selectors let you determine what styles to apply to what tags
+	A tag with class="hello" can be selected with .hello in css
+ 	A tag with id="hello" can be selected with #hello in css
+ 	in general, classes can be used to label multiple times per class, ids only once per id
+
+ 	you can also reference elements or tags directly, like i'm doing with body below 
+*/
+
+
+body{
+	background: #ffffff; /*a hex-code for a light grey*/
+}
+
+.formA {
+	width: 200px;/*sets the width of the formA div*/
+	border:black 1px solid;/*gives a black solid border*/
+	float:left;
+}
+
+#answer {
+	list-style: none;/*turns off normal list formatting (bullets)*/
+}
+
+#list {
+	float:left;
+	margin-left:50px;
+}

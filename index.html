@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- the head loads all the things -->
+<head>
+
+	<!-- title goes above teh page (chrome tab, etc) -->
+	<title>JP-Concussed</title>
+
+	<!-- use link and href for css files -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- use script and src for javaScript -->
+	<!-- this is jquery. it makes life easy until you want to do some really complex stuff. even then, it's nice. 
+		we're loading via the web, but can download to run locally if we want. -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<!-- this is a plugin we're using that makes forms super awesome. it uses jquery so it has to load after it. 
+		note that i've dropped it into a plugins folder to show you how you can organize things and route to them. -->
+	<script src="plugins/serializeForm.js"></script>
+	<!-- this is our own js file where we're doing the work. -->
+	<script src="script.js"></script>
+
+</head>
+
+<!-- the body is what you see when the page loads -->
+<body>
+	<!-- a header tag. h1 is the biggest, down to h6 -->
+	<h1>Hello World</h1>
+
+	<!-- forms are highly specialized, but make life easy in this situation -->
+	<form class="formA">
+
+		<!-- label tags have a 'for' attribute that is associated with the 'name' attr of an input tag -->
+		<label for="name">Name: </label>
+		<input id="name" name="name" type="text">
+		<br/> <!-- br tags move things down to the next line -->
+
+		<label for="inputA">inputA</label>
+		<input id="inputA" name="inputA" type="number">
+
+		<br/>
+		<label for="inputB">inputB</label>
+		<input id="inputB" name="inputB" type="number">
+
+		<br/>
+		<!-- giving a button a 'submit' type tells the form to submit the data when it is clicked,
+		which fires the function in our script.js file -->
+		<button type="submit">Submit</button>
+	</form>
+
+	<div id="list"><!-- just a little label -->
+		<h3>List of peeeeeeple</h3>
+		<!-- a labeled 'ul' tag, which means unordered list -->
+		<ul id="answer"></ul>
+	</div>
+
+</body>
+</html>
