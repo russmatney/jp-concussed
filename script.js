@@ -26,10 +26,10 @@ $(document).ready(function(){
 		//do some math here and assign it to var = answer before the end
 
 		//example
-		var scatScore = a + b;
+		var sum = a + b;
 
 		//jQuery's .append() function adds html to the end of the html inside the selected tag
 		//	which is, in this case, id='answer'
-		$("#answer").append("<li>" + name + ": " + scatScore + "</li>");//each is wrapped with 'li' tags because they are list items in the '#answer' 'ul'
+		$("#answer").append("<li>" + name + ": " + sum + "</li>");//each is wrapped with 'li' tags because they are list items in the '#answer' 'ul'
 	});
 });
